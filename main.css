@@ -1,0 +1,15 @@
+.img {
+    width: 200px;
+    height: 280px;
+    background-image: url(pholder.jpg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+.frame1 {
+    background-position: 0% 0%;
+}
+
+.frame2 {
+    background-position: 0% 100%;
+}
