@@ -1,13 +1,12 @@
-.img {
-    width: 200px;
-    height: 280px;
-    background-image: url(pholder.jpg);
-    /* background-size: cover; */
+.frame {
+    /* width: 240px;
+    height: 240px; */
     background-repeat: no-repeat;
 }
 
 .frame1 {
     background-position: 0% 0%;
+    transform: rotateZ(180deg);
 }
 
 .frame2 {
@@ -15,25 +14,28 @@
 }
 
 .frame3 {
-    background-position: 25% 0%;
+    background-position: 25% 100%;
 }
 
 .frame4 {
-    background-position: 50% 0%;
+    background-position: 75% 100%;
 }
 
 .frame5 {
-    background-position: 75% 0%;
+    background-position: 100% 100%;
 }
 
 .frame6 {
-    background-position: 0% 100%;
+    background-position: 100% 0%;
+    transform: rotateZ(180deg);
 }
 
 .frame7 {
-    background-position: 0% 100%;
+    background-position: 75% 0%;
+    transform: rotateZ(180deg);
 }
 
 .frame8 {
-    background-position: 0% 100%;
+    background-position: 25% 0%;
+    transform: rotateZ(180deg);
 }
