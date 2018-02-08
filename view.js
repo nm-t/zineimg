@@ -4,8 +4,8 @@ function main(){
   getImageId();
 }
 
-let w = 960;
-let h = 720;
+let w = 1000;
+let h = 707;
 
 // https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams
 function getImageId() {

@@ -19,6 +19,9 @@ let resp;
 let form = new FormData();
 
 function uploadImage() {
+  $("#upload-butt").toggle();
+  $("#loader").toggle();
+
   let $img = $('img');
   localStorage.imageBase64 = $img.attr('src').replace(/.*,/, '');
   form.append("image", localStorage.imageBase64);

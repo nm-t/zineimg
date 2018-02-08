@@ -1,3 +1,8 @@
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .frame {
     /* width: 240px;
     height: 240px; */
@@ -14,11 +19,11 @@
 }
 
 .frame3 {
-    background-position: 25% 100%;
+    background-position: 33% 100%;
 }
 
 .frame4 {
-    background-position: 75% 100%;
+    background-position: 66% 100%;
 }
 
 .frame5 {
@@ -31,11 +36,11 @@
 }
 
 .frame7 {
-    background-position: 75% 0%;
+    background-position: 66% 0%;
     transform: rotateZ(180deg);
 }
 
 .frame8 {
-    background-position: 25% 0%;
+    background-position: 33% 0%;
     transform: rotateZ(180deg);
 }

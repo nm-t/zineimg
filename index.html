@@ -5,20 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>hello everyone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="semantic/dist/semantic.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
     <!-- https://gist.github.com/derzorngottes/3b57edc1f996dddcab25 -->
     <script src="config.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
+    <div class="ui secondary pointing menu">
+        <a class="item active">
+            Home
+        </a>
+        <a class="item">
+            About
+        </a>
+        <a class="item">
+            Random
+        </a>
+        <div class="right menu">
+            <a class="ui item">
+            @talinoob
+            </a>
+        </div>
+    </div>
+    <div class="ui container">
     <h1>hello everyone</h1>
     <p>did u get a zine from me. take a phote yo</p>
-    <div class="container">
-        <input type="button" onclick="uploadImage()" value="Upload" />
-        <!-- https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL -->
-        <input type="file" onchange="previewFile()" /><br>
-        <img src="" height="200">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL -->
+    <input type="file" onchange="previewFile()" value="pong"/><br>
+    <img src="" height="200">
+    <!-- <div class="ui action input"> -->
+        <button id="upload-butt" class="ui button" onclick="uploadImage()">Upload!</button>
+    <!-- </div> -->
+    <button id="loader" class="ui loading button" style="display:none">Uploading...</button>
+
     </div>
 </body>
 </html>
