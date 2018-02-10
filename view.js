@@ -14,7 +14,6 @@ function getImageId() {
   console.log(id);
 
   const imgLink = "https://i.imgur.com/" + id;
-  console.log(imgLink);
   $('.frame').css("background-image", "url(" + imgLink + ")");
   $('.frame').css("background-size", w + "px " + h + "px");
   $('.frame').css("width", w/4);
