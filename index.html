@@ -9,8 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-    <!-- https://gist.github.com/derzorngottes/3b57edc1f996dddcab25 -->
-    <script src="config.js"></script>
+    <script src="config.js"></script> <!-- https://gist.github.com/derzorngottes/3b57edc1f996dddcab25 -->
     <script src="main.js"></script>
 </head>
 <body>
@@ -30,29 +29,28 @@
             </a>
         </div>
     </div>
-    <div class="ui container">
-    <h1>hello everyone</h1>
-    <p>
-        <ol>
-            <li>fill out your zine!</li>
-            <li>scan your completed zine</li>
-            <li>rotate the scanned image so that the title page is in the top left corner, upside down<br/>
-                <img src="demo.png">
-            </li>
-            <li>upload your image</li>
-            <li>share the link with your friends!</li>
-        </ol>
-    </p>
-    <!-- https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL -->
-    <div>
-        <input type="file" onchange="previewFile()" value="pong"/><br>
-        <img class="thumb" src="" height="200">
-    </div>
-    <div class="ui container">
-        <button id="upload-butt" class="ui button" onclick="uploadImage()">Upload!</button>
-        <button id="loader" class="ui loading button" style="display:none">Uploading...</button>
-    </div>
 
+    <div class="ui container">
+        <h1>hello everyone</h1>
+        <p>
+            <ol>
+                <li>fill out your zine!</li>
+                <li>scan your completed zine</li>
+                <li>rotate the scanned image so that the title page is in the top left corner, upside down<br/>
+                    <img src="demo.png">
+                </li>
+                <li>upload your image</li>
+                <li>share the link with your friends!</li>
+            </ol>
+        </p>
+        <div> <!-- https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL -->
+            <input type="file" onchange="previewFile()"/><br>
+            <img class="thumb" src="" height="200">
+        </div>
+        <div class="ui container">
+            <button id="upload" class="ui button" onclick="uploadImage()">Upload!</button>
+            <button id="loader" class="ui loading button" style="display:none">Uploading...</button>
+        </div>
     </div>
 </body>
 </html>

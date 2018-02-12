@@ -14,13 +14,13 @@ function previewFile() {
   }
 }
 
-let resp;
 let form = new FormData();
-console.log(form);
 
 function uploadImage() {
-  $("#upload-butt").toggle();
+  $("#upload").toggle();
   $("#loader").toggle();
+
+  let resp;
 
   let $img = $('.thumb');
   localStorage.imageBase64 = $img.attr('src').replace(/.*,/, '');
